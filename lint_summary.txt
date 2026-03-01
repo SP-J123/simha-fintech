@@ -1,0 +1,28 @@
+\app\legal\aml-kyc\page.tsx:
+  Line 36: react/no-unescaped-entities - `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.
+
+\app\legal\cookies\page.tsx:
+  Line 36: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 36: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+
+\app\legal\privacy\page.tsx:
+  Line 38: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 38: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 38: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 38: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 38: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 38: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 61: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 61: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+
+\app\legal\terms\page.tsx:
+  Line 38: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 38: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 38: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 38: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 38: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 38: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 38: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 38: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 38: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.
+  Line 38: react/no-unescaped-entities - `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.

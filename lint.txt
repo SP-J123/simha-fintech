@@ -1,0 +1,81 @@
+﻿
+> simha-temp@0.1.0 lint
+> eslint
+
+
+C:\Users\Administrator\Desktop\Simha Fintech\Try1\app\contact\ContactPageClient.tsx
+  246:41  error  Do not use an `<a>` element to navigate to `/legal/privacy/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+
+C:\Users\Administrator\Desktop\Simha Fintech\Try1\app\products\cex\page.tsx
+  15:28  warning  'staggerItemVariants' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Administrator\Desktop\Simha Fintech\Try1\components\animations\ExchangeVisual.tsx
+   73:33  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\Administrator\Desktop\Simha Fintech\Try1\components\animations\ExchangeVisual.tsx:73:33
+  71 |           {[...Array(24)].map((_, i) => {
+  72 |             const isGreen = i % 3 !== 0;
+> 73 |             const height = 30 + Math.random() * 100;
+     |                                 ^^^^^^^^^^^^^ Cannot call impure function
+  74 |             const wickHeight = height + Math.random() * 40;
+  75 |             
+  76 |             return (                                                        react-hooks/purity
+   74:41  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\Administrator\Desktop\Simha Fintech\Try1\components\animations\ExchangeVisual.tsx:74:41
+  72 |             const isGreen = i % 3 !== 0;
+  73 |             const height = 30 + Math.random() * 100;
+> 74 |             const wickHeight = height + Math.random() * 40;
+     |                                         ^^^^^^^^^^^^^ Cannot call impure function
+  75 |             
+  76 |             return (
+  77 |               <motion.div                                                                react-hooks/purity
+  164:43  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\Administrator\Desktop\Simha Fintech\Try1\components\animations\ExchangeVisual.tsx:164:43
+  162 |               <motion.div
+  163 |                 initial={{ width: 0 }}
+> 164 |                 animate={{ width: `${30 + Math.random() * 60}%` }}
+      |                                           ^^^^^^^^^^^^^ Cannot call impure function
+  165 |                 transition={{ duration: 1, delay: 0.8 + (i * 0.1) }}
+  166 |                 style={{
+  167 |                   position: "absolute",  react-hooks/purity
+  191:43  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\Administrator\Desktop\Simha Fintech\Try1\components\animations\ExchangeVisual.tsx:191:43
+  189 |               <motion.div
+  190 |                 initial={{ width: 0 }}
+> 191 |                 animate={{ width: `${30 + Math.random() * 60}%` }}
+      |                                           ^^^^^^^^^^^^^ Cannot call impure function
+  192 |                 transition={{ duration: 1, delay: 1.2 + (i * 0.1) }}
+  193 |                 style={{
+  194 |                   position: "absolute",  react-hooks/purity
+
+C:\Users\Administrator\Desktop\Simha Fintech\Try1\components\layout\Navbar.tsx
+  48:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\Administrator\Desktop\Simha Fintech\Try1\components\layout\Navbar.tsx:48:9
+  46 |     // Auto-close mobile nav on route change
+  47 |     useEffect(() => {
+> 48 |         setMobileOpen(false);
+     |         ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  49 |     }, [pathname]);
+  50 |
+  51 |     // Prevent body scroll when mobile menu is open  react-hooks/set-state-in-effect
+
+Γ£û 7 problems (6 errors, 1 warning)
+
