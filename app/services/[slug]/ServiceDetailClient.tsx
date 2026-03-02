@@ -33,6 +33,7 @@ export default function ServiceDetailClient({ service }: Props) {
                             alt={service.title}
                             fill
                             priority
+                            unoptimized
                             style={{ objectFit: "cover", zIndex: 0 }}
                         />
                         <div
