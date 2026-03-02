@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+.gitignore
+.dockerignore
+README.md
+LICENSE
+.vscode
+.github
+.env*
+build.log
+tsc_error*.log
+eslint_report.json
+lighthouse-report.html
+*.tsbuildinfo
