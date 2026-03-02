@@ -1,11 +1,12 @@
 # Use Node 20 as base for robustness and compatibility with Next.js 15
-FROM node:20-alpine AS base
+FROM node:20-slim AS base
 
 # Stage 1: Install dependencies
 FROM base AS deps
-# Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
-RUN apk add --no-cache libc6-compat
+# libssl-dev and ca-certificates are often useful in slim images, 
+# but for basic Next.js build, we'll keep it minimal.
 WORKDIR /app
+
 
 # Install dependencies based on the preferred package manager
 COPY package.json package-lock.json ./
