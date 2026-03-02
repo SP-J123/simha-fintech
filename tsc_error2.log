@@ -1,0 +1,6 @@
+﻿.next/types/validator.ts(96,39): error TS2307: Cannot find module '../../app/learn/blog/page.js' or its corresponding type declarations.
+app/blog/[slug]/BlogPostClient.tsx(9,10): error TS2305: Module '"@/lib/data/blog"' has no exported member 'getRelatedPosts'.
+app/blog/[slug]/BlogPostClient.tsx(449,47): error TS7006: Parameter 'rp' implicitly has an 'any' type.
+app/blog/page.tsx(4,23): error TS2305: Module '"@/lib/data/blog"' has no exported member 'getFeaturedPost'.
+app/blog/page.tsx(4,40): error TS2305: Module '"@/lib/data/blog"' has no exported member 'getAllCategories'.
+app/blog/page.tsx(62,42): error TS7006: Parameter 'category' implicitly has an 'any' type.
